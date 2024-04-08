@@ -64,30 +64,57 @@
   justify-content: center;
   list-style-type: none;
   padding-left: 00px;
+  transition: filter 0.3s ease;
+}
+.icons i:hover {
+  filter: brightness(0.9); /* Reducir el brillo al 70% */
 }
 .icons li{
   padding-left: 60px;
   font-size: 130px;  
 }
+
 .iconos a{ color: inherit; /* Hereda el color del texto padre */
   text-decoration: none; /* Elimina el subrayado */}
-.presentacion{
- letter-spacing: 5px; /* Ajustar el espaciado entre letras a 2 píxeles */
-  margin: auto;
-  width: fit-content;
-  margin-bottom: 70px;
-  color: whitesmoke;
-  font-size: 40px;
-  font-family: "Roboto Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  opacity: 0.9;
-  border-top: 3px solid whitesmoke; /* Borde superior de 2px de ancho y color negro */
-  border-bottom: 3px solid whitesmoke; /* Borde inferior de 2px de ancho y color negro */
-  padding: 20px;
+  .presentacion {
+    letter-spacing: 5px;
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 100px;
+    color: whitesmoke;
+    font-size: 37px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    opacity: 0.9;
+    position: relative; /* Agrega posición relativa */
+    padding: 20px;
+  }
   
-}
+  .presentacion::before {
+    content: '';
+    position: absolute;
+    left: 50%; /* Centra la línea horizontalmente */
+    transform: translateX(-50%); /* Centra la línea correctamente */
+    width: 130%; /* Ancho de la línea superior */
+    height: 3px; /* Altura de la línea */
+    background-color: whitesmoke;
+    top: -3px; /* Posiciona la línea 3px por encima del borde superior */
+  }
+  
+  .presentacion::after {
+    content: '';
+    position: absolute;
+    left: 50%; /* Centra la línea horizontalmente */
+    transform: translateX(-50%); /* Centra la línea correctamente */
+    width: 130%; /* Ancho de la línea inferior */
+    height: 3px; /* Altura de la línea */
+    background-color: whitesmoke;
+    bottom: -3px; /* Posiciona la línea 3px por debajo del borde inferior */
+  }
+  
+  
 .presentacion p{
 opacity: 0.8;
 }
@@ -102,17 +129,24 @@ opacity: 0.8;
   justify-content: space-around; /* Distribuir el espacio entre los elementos */
   list-style-type: none;
   padding: 0; /* Eliminar el padding predeterminado */
+  
+}
+.links ul li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .links ul li {
   flex: 1; /* Hacer que todos los elementos ocupen el mismo espacio */
   text-align: center; /* Centrar el texto horizontalmente */
-  padding: 10px; /* Espaciado interno */
+  padding: 20px; /* Espaciado interno */
   border: 3px solid white;
   color: whitesmoke;
   border-radius: 2%;
   box-sizing: border-box; /* Incluir el borde en el ancho total */
   margin: 0 0px; /* Espacio entre los elementos de la lista */
+  transition: background-color 0.3s ease; 
+  cursor: pointer;
+  
 }
 
 .links a {
@@ -124,11 +158,11 @@ opacity: 0.8;
 .links ul li:nth-child(2)::after {
   content: '';
   position: absolute;
-  top: 670px; /* Posiciona la línea arriba del elemento */
+  top: 645px; /* Posiciona la línea arriba del elemento */
   left: 50%; /* Centra la línea horizontalmente */
   transform: translateX(-50%); /* Centra la línea correctamente */
   width: 3px;
-  height: calc(5% + 25px); /* Altura de la línea */
+  height: calc(8% + 25px); /* Altura de la línea */
   background-color: whitesmoke;
 }
 
