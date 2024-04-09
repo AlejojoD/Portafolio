@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
-import Wrapper from './wrapper.js';
+import '../src/links/about.css'
+import Wrapper from './wrapper';
 
 function App() {
   return (
     <div className="App">
-      <Wrapper>
-        {/* Contenido de la página */}
-      </Wrapper>
+      <Wrapper />
     </div>
   );
 }

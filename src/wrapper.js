@@ -1,9 +1,19 @@
 import React from "react";
 import "./fondo.css"
 import video from "./videoo.mp4";
+import { useState } from 'react';
+import About from './links/about';
+import Skills from './links/skills';
+import Experience from './links/experience';
+import ContactMe from './links/contact';
 
 
 function Wrapper({children}) {
+    const [showAbout, setShowAbout] = useState(false);
+    const [showSkills, setShowSkills] = useState(false);
+    const [showExperience, setShowExperience] = useState(false);
+    const [showContact, setShowContact] = useState(false);
+
     return ( 
         <div className="wrapper">
         <div className="fondo"
@@ -33,13 +43,17 @@ function Wrapper({children}) {
                 
     </div>
             <div className="links">
-                <ul clas>
-                    <li><a href="#intro">ABOUT</a></li>
-                    <li><a href="#work">SKILLS</a></li>
-                    <li><a href="#exp">EXPERIENCE</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                <ul >
+                <li><a href="#intro" onClick={() => setShowAbout(true)}>ABOUT</a></li>
+                <li><a href="#work" onClick={() => setShowSkills(true)}>SKILLS</a></li>
+                <li><a href="#exp" onClick={() => setShowExperience(true)}>EXPERIENCE</a></li>
+                <li><a href="#contact" onClick={() => setShowContact(true)}>CONTACT</a></li>
                 </ul>
             </div>
+            {showAbout && <About onClose={() => setShowAbout(false)} />}
+            {showSkills && <Skills onClose={() => setShowSkills(false)} />}
+            {showExperience && <Experience onClose={() => setShowExperience(false)} />}
+            {showContact && <ContactMe onClose={() => setShowContact(false)} />}
         <div className="footer">
             <p>&copy; DIEGOBAUTISTA. </p>
         </div>

@@ -1,4 +1,6 @@
-
+.header{
+  display: none;
+}
 .fondo {
   position: absolute;
   top: 0;
