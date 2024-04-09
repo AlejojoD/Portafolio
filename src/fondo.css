@@ -1,10 +1,4 @@
 
-
-
- 
-
-
-
 .fondo {
   position: absolute;
   top: 0;
@@ -30,7 +24,7 @@
   height: 1000px;
   position: relative;
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0.0); /* Fondo semitransparente */
+  background-color: rgba(255, 255, 255, 0); /* Fondo semitransparente */
   padding: 20px; /* Añade espaciado al contenido para separarlo del borde */
 }
 
@@ -128,7 +122,8 @@ opacity: 0.8;
   display: flex;
   justify-content: space-around; /* Distribuir el espacio entre los elementos */
   list-style-type: none;
-  padding: 0; /* Eliminar el padding predeterminado */
+  padding: 0;
+  margin-bottom: 150px; /* Eliminar el padding predeterminado */
   
 }
 .links ul li:hover {
@@ -165,6 +160,148 @@ opacity: 0.8;
   height: calc(8% + 25px); /* Altura de la línea */
   background-color: whitesmoke;
 }
+.footer{
+  color: whitesmoke;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  opacity:0.4;
+  font-size:15px
+}
 
+/*aqui inician los mediaquery para el responsive*/
+/*pantallas pequenas */
 
+@media only screen and (max-width: 600px) {
+  .header {
+    margin-top: 80px; /* Reducir el margen superior */
+    width: 90%; /* Ajustar el ancho al 90% del contenedor */
+    height: auto; /* Altura automática para adaptarse al contenido */
+  }
 
+  .iconos {
+    margin-right: 20px; /* Reducir el margen derecho */
+  }
+
+  .icons li {
+    padding-left: 30px; /* Reducir el padding izquierdo */
+    font-size: 80px; /* Reducir el tamaño de la fuente de los íconos */
+  }
+
+  .presentacion {
+    font-size: 25px; /* Reducir el tamaño de la fuente */
+    margin-bottom: 50px; /* Reducir el margen inferior */
+  }
+  .links ul{
+    display: flex;
+    flex-direction: column;
+  }
+  .links ul li {
+    padding: 5px;
+    border: solid 2px whitesmoke;/* Reducir el padding de los elementos de la lista */
+  }
+  .links a {
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+    font-size: 20px; /* Reducir el padding de los elementos de la lista */
+  }
+  .icons li:first-child::after {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 80%;
+    background-color:whitesmoke;
+    margin-left: 130px; /* Ajusta según necesites */
+    margin-top: -25px;
+  }
+  .links ul li:nth-child(2)::after {
+   display: none;
+  }
+
+  .footer {
+    font-size: 12px; /* Reducir el tamaño de la fuente del footer */
+  }
+
+  .presentacion::before {
+    content: '';
+    position: absolute;
+    left: 50%; /* Centra la línea horizontalmente */
+    transform: translateX(-50%); /* Centra la línea correctamente */
+    width: 90%; /* Ancho de la línea superior */
+    height: 3px; /* Altura de la línea */
+    background-color: whitesmoke;
+    top: -3px; /* Posiciona la línea 3px por encima del borde superior */
+  }
+  
+  .presentacion::after {
+    content: '';
+    position: absolute;
+    left: 50%; /* Centra la línea horizontalmente */
+    transform: translateX(-50%); /* Centra la línea correctamente */
+    width: 90%; /* Ancho de la línea inferior */
+    height: 3px; /* Altura de la línea */
+    background-color: whitesmoke;
+    bottom: -3px; /* Posiciona la línea 3px por debajo del borde inferior */
+  }
+}
+
+/* pantallas medianas*/
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .header {
+    margin-top: 100px; /* Ajustar el margen superior */
+    width: 80%; /* Ajustar el ancho al 80% del contenedor */
+  }
+
+  .iconos {
+    margin-right: 50px; /* Ajustar el margen derecho */
+  }
+
+  .icons li {
+    padding-left: 40px; /* Ajustar el padding izquierdo */
+    font-size: 100px; /* Ajustar el tamaño de la fuente de los íconos */
+  }
+
+  .presentacion {
+    font-size: 30px; /* Ajustar el tamaño de la fuente */
+    margin-bottom: 80px; /* Ajustar el margen inferior */
+  }
+
+  .links ul li {
+    
+    padding: 20px; /* Ajustar el padding de los elementos de la lista */
+  }
+
+  .footer {
+    font-size: 14px; /* Ajustar el tamaño de la fuente del footer */
+  }
+  .icons li:first-child::after {
+   display:none;
+  }
+  .links ul li:nth-child(2)::after {
+    display: none;
+   }
+   .presentacion::before {
+    content: '';
+    position: absolute;
+    left: 50%; /* Centra la línea horizontalmente */
+    transform: translateX(-50%); /* Centra la línea correctamente */
+    width: 100%; /* Ancho de la línea superior */
+    height: 3px; /* Altura de la línea */
+    background-color: whitesmoke;
+    top: -3px; /* Posiciona la línea 3px por encima del borde superior */
+  }
+  
+  .presentacion::after {
+    content: '';
+    position: absolute;
+    left: 50%; /* Centra la línea horizontalmente */
+    transform: translateX(-50%); /* Centra la línea correctamente */
+    width: 100%; /* Ancho de la línea inferior */
+    height: 3px; /* Altura de la línea */
+    background-color: whitesmoke;
+    bottom: -3px; /* Posiciona la línea 3px por debajo del borde inferior */
+  }
+}

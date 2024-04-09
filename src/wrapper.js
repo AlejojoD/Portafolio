@@ -1,5 +1,4 @@
 import React from "react";
-import foto from "./pc.jpg"
 import "./fondo.css"
 import video from "./videoo.mp4";
 
@@ -41,7 +40,9 @@ function Wrapper({children}) {
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
-
+        <div className="footer">
+            <p>&copy; DIEGOBAUTISTA. </p>
+        </div>
          
         </div>
       </div>
