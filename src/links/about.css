@@ -1,0 +1,44 @@
+.display{
+    margin: auto;
+    margin-top: 20px;
+   
+    width: 1000px;
+    height: 1150px;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
+    padding: 20px; /* Añade espaciado al contenido para separarlo del borde */
+  }
+  .imagen{
+    border-radius: 2%;
+    height: 600px;
+    opacity: 0.8;
+  }
+  .display h1{
+    
+    text-align:start;
+    text-decoration: underline;
+    font-size: 55px;
+    padding-left: 50px;
+    opacity: .6;
+  }
+  .display p{
+    
+    font-size: 27px;
+    text-align: justify;
+    padding: 20px;
+  }
+  .close-button {
+    position: absolute;
+    top: 10px; /* Ajusta la posición según sea necesario */
+    right: 20px; /* Ajusta la posición según sea necesario */
+    background: none;
+    border: none;
+    font-size: 90px;
+    cursor: pointer;
+    opacity: .6;
+}
+.close-button:hover{
+    opacity: 1;
+    
+}
