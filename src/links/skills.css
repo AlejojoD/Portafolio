@@ -1,0 +1,68 @@
+
+
+
+
+.displaySkills{
+
+    display: none;
+    margin: auto;
+    margin-top: 200px;
+    border-radius: 1%;
+    width: 1400px;
+    height: 750px;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
+    padding: 20px;
+
+   
+
+}
+
+
+    .displaySkills h1{
+        margin-top: 80px;
+        text-align:start;
+        text-decoration: underline;
+        font-size: 65px;
+        padding-left: 50px;
+        opacity: .6;
+        
+      }
+
+      .displaySkills p{
+        margin-top: 60px;
+        font-size: 35px;
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: justify;
+        padding: 20px;
+      }
+
+      .close-buttonSkills {
+        position: absolute;
+        top: 10px; /* Ajusta la posición según sea necesario */
+        right: 20px; /* Ajusta la posición según sea necesario */
+        background: none;
+        border: none;
+        font-size: 90px;
+        cursor: pointer;
+        opacity: .6;
+    }
+    .close-buttonSkills:hover{
+        opacity: 1;
+        
+    }
+
+    .logotiposSkills img {
+        height: 130px;
+        width: 170px;
+        margin-top: 60px;
+        opacity: 0.8;
+
+        
+        
+      }
+
+      
+      

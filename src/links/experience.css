@@ -1,0 +1,92 @@
+.displayExp {
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 2%;
+    width: 80%; /* Cambiado a porcentaje para ser más adaptable */
+    max-width: 1800px; /* Establece un ancho máximo */
+    height: auto; /* Cambiado a auto para ajustarse al contenido */
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+}
+
+.displayExp h1{
+
+text-align:center;
+text-decoration: underline;
+font-size: 35px;
+padding-left: 50px;
+opacity: .6;
+}
+.displayExp p{
+
+font-size: 27px;
+text-align: justify;
+padding: 20px;
+}
+.close-buttonExp {
+position: absolute;
+top: 10px; /* Ajusta la posición según sea necesario */
+right: 20px; /* Ajusta la posición según sea necesario */
+background: none;
+border: none;
+font-size: 90px;
+cursor: pointer;
+opacity: .6;
+}
+.close-buttonExp:hover{
+opacity: 1;
+
+}
+.displayExp {
+    margin: auto;
+    margin-top: 80px;
+    border-radius: .5%;
+    width: 80%; /* Cambiado a porcentaje para ser más adaptable */
+    max-width: 1200px; /* Establece un ancho máximo */
+    height: auto; /* Cambiado a auto para ajustarse al contenido */
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+}
+
+.experiencias1,
+.experiencias2 {
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos horizontalmente */
+    margin-top: 60px;
+    gap: 20px; /* Espacio entre las imágenes y los textos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en una fila */
+}
+
+.USA,
+.galeria,
+.agriculture,
+.tictac {
+    flex: 1; /* Hace que los elementos ocupen el mismo espacio */
+    max-width: 300px; /* Establece un ancho máximo para cada elemento */
+    margin: 20px; /* Espacio alrededor de cada elemento */
+    text-align: center; /* Centra el texto */
+}
+
+.USA img,
+.galeria img,
+.agriculture img,
+.tictac img {
+    height: 300px;
+    max-width: 100%; /* Asegura que las imágenes no se salgan de su contenedor */
+    border-radius: 50%; /* Borde redondeado para las imágenes */
+}
+
+.USA p,
+.galeria p,
+.agriculture p,
+.tictac p {
+    font-size: 20px; /* Tamaño de fuente para los textos */
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+    line-height: 1.5; /* Altura de línea para una mejor legibilidad */
+}
+
+
