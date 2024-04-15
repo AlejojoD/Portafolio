@@ -15,6 +15,12 @@
     background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
     padding: 20px;
 
+    border: none; /* Sin borde */
+        padding: 10px; /* Espaciado interno */
+        border-radius: 10px; /* Bordes redondeados */
+        box-shadow: 
+              5px 5px 30px rgba(0, 0, 0, 0.9); 
+
    
 
 }

@@ -1,6 +1,7 @@
 .header{
-  display: none;
+  display:none;
 }
+
 .fondo {
   position: absolute;
   top: 0;
@@ -8,6 +9,9 @@
   width: 100%;
   height: 100%;
   z-index: -1;
+
+  
+  
 }
 
 .fondo video {
@@ -15,6 +19,7 @@
   height: 100%;
   object-fit: cover; 
   filter: brightness(0.7) contrast(1.1) saturate(1.3);
+  
   
 }
 
@@ -28,6 +33,8 @@
   z-index: 1;
   background-color: rgba(255, 255, 255, 0); /* Fondo semitransparente */
   padding: 20px; /* Añade espaciado al contenido para separarlo del borde */
+  
+  
 }
 
 .link::before{
@@ -43,6 +50,8 @@
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
+
+  
   
 }
 .icons li:first-child::after {
@@ -126,6 +135,7 @@ opacity: 0.8;
   list-style-type: none;
   padding: 0;
   margin-bottom: 150px; /* Eliminar el padding predeterminado */
+  
   
 }
 .links ul li:hover {

@@ -1,0 +1,173 @@
+
+
+.displayContact{
+    
+   
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 2%;
+    width: 700px;
+    height: 1050px;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.6); /* Fondo semitransparente */
+    padding: 20px;
+
+    border: none; /* Sin borde */
+        padding: 10px; /* Espaciado interno */
+        border-radius: 10px; /* Bordes redondeados */
+        box-shadow: 
+              5px 5px 30px rgba(0, 0, 0, 0.9); }
+
+  
+
+
+
+    .displayContact h1{
+        margin-top: 30px;
+        text-align:CENTER;
+        font-weight: bold;
+        font-size: 55px;
+        text-decoration: underline;
+        opacity: .6;
+        margin-bottom: 30px;
+
+        font-family: "Nunito Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings:
+          "wdth" 100,
+          "YTLC" 500;
+        
+        
+      }
+
+      .displayContact p{
+        margin-top: 60px;
+        font-size: 35px;
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: justify;
+        padding: 20px;
+      }
+
+      .close-buttonContact {
+        position: absolute;
+        top: 010px; /* Ajusta la posición según sea necesario */
+        right: 10px; /* Ajusta la posición según sea necesario */
+        width: 40px; /* Ajusta el ancho según sea necesario */
+        height: 40px; /* Ajusta la altura según sea necesario */
+        background: none;
+        border: none;
+        font-size: 80px;
+        cursor: pointer;
+        opacity: 0.6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .close-buttonContact:hover{
+        opacity: 1;
+        
+    }
+    .formContact{
+        display: inline-block;
+        
+    }
+    .submit{
+        font-weight: bold;
+        opacity: 0.9;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .formContact label {
+        
+        background-color: rgba(255, 255, 255, 0.0); /* Color de fondo transparente */
+        padding: 5px 10px; /* Espaciado interno */
+        border-radius: 5px; /* Bordes redondeados */
+        font-size: 35px;
+        font-weight: bold;
+        text-align: left; /* Alinear el texto a la izquierda */
+        display: block; 
+        width: 430px;
+        margin-top: 10px;
+        opacity: 0.7;
+        font-family: "Nunito Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings:
+          "wdth" 100,
+          "YTLC" 500;
+        
+          
+    }
+
+    
+    .formContact input {
+        
+        background-color: rgba(255, 255, 255, 0.0); /* Color de fondo transparente */
+        padding: 5px 10px; /* Espaciado interno */
+        border-radius: 5px; /* Bordes redondeados */
+        font-size: 30px;
+        width: 400px;
+        font-family: "Nunito Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings:
+          "wdth" 100,
+          "YTLC" 500;
+
+
+        
+
+         
+          border: none; /* Sin borde */
+          padding: 10px; /* Espaciado interno */
+          border-radius: 10px; /* Bordes redondeados */
+          box-shadow: 
+              5px 5px 30px rgba(0, 0, 0, 0.9); 
+        transition: ease-in-out 0.5sg;
+    }
+    .formContact input:hover{
+        opacity: 0.8;
+    }
+
+
+    .formContact textarea {
+        
+        background-color: rgba(255, 255, 255, 0.0); /* Color de fondo transparente */
+        padding: 5px 10px; /* Espaciado interno */
+        border-radius: 5px; /* Bordes redondeados */
+        font-size: 28px;
+        margin-bottom: 80px;
+        font-family: "Nunito Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings:
+          "wdth" 100,
+          "YTLC" 500;
+
+
+
+        
+        border: none; /* Sin borde */
+        padding: 10px; /* Espaciado interno */
+        border-radius: 10px; /* Bordes redondeados */
+        box-shadow: 
+              5px 5px 30px rgba(0, 0, 0, 0.9); }
+
+              .formContact textarea:hover{
+                opacity: 0.8;
+            }
+
+
+
+    
+
+      

@@ -7,6 +7,7 @@ import '../src/links/experience.css'
 import Wrapper from './wrapper';
 import About from './links/about'
 import Skills from './links/skills';
+import Contact from './links/contact'
 import Experience from './links/experience';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <About></About>
       <Skills></Skills>
       <Experience></Experience>
+      <Contact></Contact>
     </div>
   );
 }

@@ -1,15 +1,22 @@
 .display{
-           display: none;             
-    
+   display: none;
     margin: auto;
     margin-top: 20px;
-    border-radius: .5%;
+    border-radius: 1%;
     width: 1000px;
     height: 1150px;
     position: relative;
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
-    padding: 20px; /* Añade espaciado al contenido para separarlo del borde */
+    padding: 20px; 
+    /* Añade espaciado al contenido para separarlo del borde */
+    
+    
+    border: none; /* Sin borde */
+        padding: 10px; /* Espaciado interno */
+        border-radius: 10px; /* Bordes redondeados */
+        box-shadow: 
+              5px 5px 30px rgba(0, 0, 0, 0.9); 
   }
   .imagen{
     border-radius: 2%;
