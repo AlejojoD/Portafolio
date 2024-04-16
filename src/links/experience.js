@@ -5,10 +5,10 @@ import usa from '../usa.jpg';
 import galeria from '../galeria.png';
 import agriculture from '../miraclee.png';
 import tictac from '../triki d.png';
-function Experience() {
+function Experience({onClose } ) {
     return ( 
         <div className="displayExp">
-            <button className="close-buttonExp" onClick={onclose}>×</button>
+            <button className="close-buttonExp" onClick={onClose}>×</button>
             
             <div className='experiencia'>
 

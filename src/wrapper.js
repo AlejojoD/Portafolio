@@ -1,70 +1,80 @@
-import React from "react";
-import "./fondo.css"
-import video from "./videoo.mp4";
-import { useState } from 'react';
+import React, { useState } from 'react';
+import './fondo.css';
+import video from './videoo.mp4';
 import About from './links/about';
 import Skills from './links/skills';
 import Experience from './links/experience';
-import ContactMe from './links/contact';
+import Contact from './links/contact';
 
+function Wrapper() {
+    const [activeComponent, setActiveComponent] = useState(null);
+    const [showHeader, setShowHeader] = useState(true); // Estado para controlar si se muestra la clase 'header'
 
+    const handleClick = (component) => {
+        if (component === activeComponent) {
+            setActiveComponent(null); // Si el componente ya está activo, lo ocultamos al hacer clic nuevamente
+        } else {
+            setActiveComponent(component); // Mostramos el componente correspondiente al hacer clic
+        }
+    };
 
+    const handleHeaderToggle = () => {
+        setShowHeader(!showHeader); // Cambiamos el estado para mostrar u ocultar la clase 'header'
+    };
 
-function Wrapper({children}) {
-    const [showWrapper, setShowWrapper] = useState(true);
-
-    const [showAbout, setShowAbout] = useState(false);
-    const [showSkills, setShowSkills] = useState(false);
-    const [showExperience, setShowExperience] = useState(false);
-    const [showContact, setShowContact] = useState(false);
-
-    return ( 
+    return (
         <div className="wrapper">
-        <div className="fondo"
-        >
-             <video autoPlay loop muted>
+            <div className="fondo">
+                <video autoPlay loop muted>
                     <source src={video} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
-        </div>
-        <div className="header">
-          {children}
-          <div className="iconos"> 
-        <ul className="icons">
-            <li><a href="https://www.linkedin.com/in/alejandro-bautista12/" target="_blank"><i className="fab fa-linkedin"></i></a></li>
-            <li><a href="https://github.com/AlejojoD" target="_blank"><i className="fab fa-github"></i></a></li>
-        </ul>
             </div>
+            {showHeader && ( // Mostrar el header solo si showHeader es true
+                <div className="header">
+                    <div className="iconos">
+                        <ul className="icons">
+                            <li>
+                                <a href="https://www.linkedin.com/in/alejandro-bautista12/" target="_blank">
+                                    <i className="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/AlejojoD" target="_blank">
+                                    <i className="fab fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="presentacion">
+                        <h1>DIEGO BAUTISTA </h1>
+                        <p>
+                            FULL-STACK WEB DEVELOPMENT. <br />
+                            VISIT MY <a href="https://github.com/AlejojoD" target="_blank">GITHUB.</a>
+                        </p>
+                    </div>
+                    <div className="links">
+                        <ul>
+                            <li onClick={() => handleClick('ABOUT')  }><a href="#intro" >ABOUT</a></li>
+                            <li onClick={() => handleClick('SKILLS')}><a href="#work" >SKILLS</a></li>
+                            <li onClick={() => handleClick('EXPERIENCE')}><a href="#exp" >EXPERIENCE</a></li>
+                            <li onClick={() => handleClick('CONTACT')}><a href="#contact" >CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            )}
+            {activeComponent === 'ABOUT' && <About onClose={() => setActiveComponent(null)} />}
+            {activeComponent === 'SKILLS' && <Skills onClose={() => setActiveComponent(null)} />}
+            {activeComponent === 'EXPERIENCE' && <Experience onClose={() => setActiveComponent(null)} />}
+            {activeComponent === 'CONTACT' && <Contact onClose={() => setActiveComponent(null)} />}
 
-
-    <div className="presentacion">
-
-                <h1>DIEGO BAUTISTA </h1><p>
-                FULL-STACK WEB DEVELOPMENT. <br></br>
-                VISIT MY <a href="https://github.com/AlejojoD" target="_blank">GITHUB.</a>
-
-                </p>
-                
-    </div>
-            <div className="links">
-                <ul >
-                <li><a href="#intro" onClick={() => {setShowWrapper(false); setShowAbout(true);}}>ABOUT</a></li>
-                <li><a href="#work" onClick={() => {setShowWrapper(false); setShowSkills(true);}}>SKILLS</a></li>
-                <li><a href="#exp" onClick={() => {setShowWrapper(false); setShowExperience(true);}}>EXPERIENCE</a></li>
-                <li><a href="#contact" onClick={() => {setShowWrapper(false); setShowContact(true);}}>CONTACT</a></li>
-                </ul>
+            <div className="footer">
+                <p>&copy; DIEGOBAUTISTA. </p>
+                <button onClick={handleHeaderToggle}>Toggle Header</button> {/* Botón para activar/desactivar la clase 'header' */}
             </div>
-            {showAbout && <About onClose={() => setShowAbout(false)} />}
-            {showSkills && <Skills onClose={() => setShowSkills(false)} />}
-            {showExperience && <Experience onClose={() => setShowExperience(false)} />}
-            {showContact && <ContactMe onClose={() => setShowContact(false)} />}
-        <div className="footer">
-            <p>&copy; DIEGOBAUTISTA. </p>
         </div>
-         
-        </div>
-      </div>
-     );
+    );
 }
 
 export default Wrapper;
+

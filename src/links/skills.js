@@ -1,10 +1,10 @@
 import React from 'react';
 import '../links/skills.css';
 
-function Skills() {
+function Skills({onClose }) {
     return ( 
         <div className="displaySkills">
-        <button className="close-buttonSkills">×</button>
+        <button className="close-buttonSkills"onClick={onClose}>×</button>
         <h1>SKILLS</h1>
         <div className='logotiposSkills'>
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"></img>
