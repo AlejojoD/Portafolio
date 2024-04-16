@@ -11,6 +11,8 @@ import ContactMe from './links/contact';
 
 
 function Wrapper({children}) {
+    const [showWrapper, setShowWrapper] = useState(true);
+
     const [showAbout, setShowAbout] = useState(false);
     const [showSkills, setShowSkills] = useState(false);
     const [showExperience, setShowExperience] = useState(false);
@@ -46,10 +48,10 @@ function Wrapper({children}) {
     </div>
             <div className="links">
                 <ul >
-                <li><a href="#intro" onClick={() => setShowAbout(true)}>ABOUT</a></li>
-                <li><a href="#work" onClick={() => setShowSkills(true)}>SKILLS</a></li>
-                <li><a href="#exp" onClick={() => setShowExperience(true)}>EXPERIENCE</a></li>
-                <li><a href="#contact" onClick={() => setShowContact(true)}>CONTACT</a></li>
+                <li><a href="#intro" onClick={() => {setShowWrapper(false); setShowAbout(true);}}>ABOUT</a></li>
+                <li><a href="#work" onClick={() => {setShowWrapper(false); setShowSkills(true);}}>SKILLS</a></li>
+                <li><a href="#exp" onClick={() => {setShowWrapper(false); setShowExperience(true);}}>EXPERIENCE</a></li>
+                <li><a href="#contact" onClick={() => {setShowWrapper(false); setShowContact(true);}}>CONTACT</a></li>
                 </ul>
             </div>
             {showAbout && <About onClose={() => setShowAbout(false)} />}

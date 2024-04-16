@@ -7,19 +7,21 @@ function Contact() {
             <button className="close-buttonContact">×</button>
             <h1>CONTACT ME</h1>
             <div className='formContact'>
-                <form action="mailto:tu_correo@ejemplo.com" method="post" enctype="text/plain">
+                <form action="https://formspree.io/f/xleqoqba" method="post" enctype="application/x-www-form-urlencoded">
                     <label htmlFor="nombre">Name:</label><br />
-                    <input type="text" id="nombre" name="nombre" required /><br />
+                    <input type="text" id="nombre" name="Nombre" required /><br />
                     <label htmlFor="email">Email:</label><br />
-                    <input type="email" id="email" name="email" required /><br />
+                    <input type="email" id="email" name="Email" required /><br />
                     <label htmlFor="asunto">Subject:</label><br />
-                    <input type="text" id="asunto" name="asunto" required /><br />
+                    <input type="text" id="asunto" name="Asunto" required /><br />
                     <label htmlFor="mensaje">Message:</label><br />
-                    <textarea id="mensaje" name="mensaje" required></textarea><br />
-                    <input className='submit' type="submit" value="Submit" />
+                    <textarea id="mensaje" name="Mensaje" required></textarea><br />
+                    <input className='submit' type="submit" value="SUBMIT" />
+                
                 </form>
             </div>
         </div>
+
     );
 }
 

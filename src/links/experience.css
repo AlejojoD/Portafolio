@@ -1,6 +1,6 @@
 .displayExp {
-
-                    display:none;
+    
+                    
     margin: auto;
     margin-top: 20px;
     border-radius: 2%;
@@ -12,6 +12,12 @@
     background-color: rgba(255, 255, 255, 0.5);
     padding: 20px;
     overflow-y: auto; /* Barra de desplazamiento vertical solo cuando sea necesario */
+    border: none; /* Sin borde */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 
+          5px 5px 30px rgba(0, 0, 0, 0.9);
+
 }
 .displayExp::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera */

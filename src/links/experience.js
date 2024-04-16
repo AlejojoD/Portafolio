@@ -8,7 +8,7 @@ import tictac from '../triki d.png';
 function Experience() {
     return ( 
         <div className="displayExp">
-            <button className="close-buttonAbout">×</button>
+            <button className="close-buttonExp" onClick={onclose}>×</button>
             
             <div className='experiencia'>
 
