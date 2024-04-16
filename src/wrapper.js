@@ -8,18 +8,9 @@ import Contact from './links/contact';
 
 function Wrapper() {
     const [activeComponent, setActiveComponent] = useState(null);
-    const [showHeader, setShowHeader] = useState(true); // Estado para controlar si se muestra la clase 'header'
 
     const handleClick = (component) => {
-        if (component === activeComponent) {
-            setActiveComponent(null); // Si el componente ya está activo, lo ocultamos al hacer clic nuevamente
-        } else {
-            setActiveComponent(component); // Mostramos el componente correspondiente al hacer clic
-        }
-    };
-
-    const handleHeaderToggle = () => {
-        setShowHeader(!showHeader); // Cambiamos el estado para mostrar u ocultar la clase 'header'
+        setActiveComponent(activeComponent === component ? null : component);
     };
 
     return (
@@ -30,7 +21,7 @@ function Wrapper() {
                     Your browser does not support the video tag.
                 </video>
             </div>
-            {showHeader && ( // Mostrar el header solo si showHeader es true
+            {activeComponent !== 'ABOUT' && (
                 <div className="header">
                     <div className="iconos">
                         <ul className="icons">
@@ -55,7 +46,7 @@ function Wrapper() {
                     </div>
                     <div className="links">
                         <ul>
-                            <li onClick={() => handleClick('ABOUT')  }><a href="#intro" >ABOUT</a></li>
+                            <li onClick={() => handleClick('ABOUT')}><a href="#intro" >ABOUT</a></li>
                             <li onClick={() => handleClick('SKILLS')}><a href="#work" >SKILLS</a></li>
                             <li onClick={() => handleClick('EXPERIENCE')}><a href="#exp" >EXPERIENCE</a></li>
                             <li onClick={() => handleClick('CONTACT')}><a href="#contact" >CONTACT</a></li>
@@ -70,11 +61,9 @@ function Wrapper() {
 
             <div className="footer">
                 <p>&copy; DIEGOBAUTISTA. </p>
-                <button onClick={handleHeaderToggle}>Toggle Header</button> {/* Botón para activar/desactivar la clase 'header' */}
             </div>
         </div>
     );
 }
 
 export default Wrapper;
-

@@ -1,10 +1,7 @@
 import React from 'react';
 import escritorio from '../sada.jpg';
 import '../links/experience.css';
-import usa from '../usa.jpg';
-import galeria from '../galeria.png';
-import agriculture from '../miraclee.png';
-import tictac from '../triki d.png';
+
 function Experience({onClose } ) {
     return ( 
         <div className="displayExp">

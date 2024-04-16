@@ -14,11 +14,12 @@ function App() {
   return (
     <div className="App">
       
-      <Wrapper> </Wrapper>
+      <Wrapper> 
       <About></About>
       <Skills></Skills>
       <Experience></Experience>
       <Contact></Contact>
+      </Wrapper>
       
     </div>
   );
