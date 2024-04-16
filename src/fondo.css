@@ -159,8 +159,9 @@ opacity: 0.8;
 .links a {
   color: inherit; /* Heredar color del texto padre */
   text-decoration: none;
-  font-size: 35px;
+  font-size: 30px;
   opacity: 0.8;
+  font-weight: bold;
 }
 .links ul li:nth-child(2)::after {
   content: '';

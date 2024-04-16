@@ -13,6 +13,8 @@ function Wrapper() {
         setActiveComponent(activeComponent === component ? null : component);
     };
 
+    const showHeader = activeComponent === null || !['ABOUT', 'SKILLS', 'EXPERIENCE', 'CONTACT'].includes(activeComponent);
+
     return (
         <div className="wrapper">
             <div className="fondo">
@@ -21,7 +23,7 @@ function Wrapper() {
                     Your browser does not support the video tag.
                 </video>
             </div>
-            {activeComponent !== 'ABOUT' && (
+            {showHeader && (
                 <div className="header">
                     <div className="iconos">
                         <ul className="icons">
