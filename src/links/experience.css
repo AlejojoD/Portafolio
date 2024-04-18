@@ -4,12 +4,11 @@
     margin: auto;
     margin-top: 20px;
     border-radius: 2%;
-    width: 80%;
     width: 900px;
     height: 1150px;/* Altura fija para mostrar el contenido sin salirse del fondo */
     position: relative;
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 20px;
     overflow-y: auto; /* Barra de desplazamiento vertical solo cuando sea necesario */
     border: none; /* Sin borde */
@@ -128,7 +127,21 @@ opacity: 1;
 }
 
 
-   
+@keyframes fadeInScaleExperience {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.experience-appear {
+    animation: fadeInScaleExperience 0.5s ease forwards;
+}
+
   
 
 

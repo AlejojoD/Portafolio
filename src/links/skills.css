@@ -41,6 +41,13 @@
         margin-right: 50px;
         text-align: justify;
         padding: 20px;
+        font-family: "Nunito Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings:
+          "wdth" 100,
+          "YTLC" 500;
       }
 
       .close-buttonSkills {
@@ -69,4 +76,18 @@
       }
 
       
-      
+      @keyframes fadeInScaleSkills {
+        from {
+            opacity: 0;
+            transform: scale(0.8);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    
+    .skills-appear {
+        animation: fadeInScaleSkills 0.5s ease forwards;
+    }
+    

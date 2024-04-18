@@ -60,6 +60,7 @@ function Wrapper() {
             {activeComponent === 'SKILLS' && <Skills onClose={() => setActiveComponent(null)} />}
             {activeComponent === 'EXPERIENCE' && <Experience onClose={() => setActiveComponent(null)} />}
             {activeComponent === 'CONTACT' && <Contact onClose={() => setActiveComponent(null)} />}
+            
 
             <div className="footer">
                 <p>&copy; DIEGOBAUTISTA. </p>

@@ -10,7 +10,7 @@
     height: 1050px;
     position: relative;
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.6); /* Fondo semitransparente */
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
     padding: 20px;
 
     border: none; /* Sin borde */
@@ -27,7 +27,7 @@
         margin-top: 30px;
         text-align:CENTER;
         font-weight: bold;
-        font-size: 55px;
+        font-size: 50px;
         text-decoration: underline;
         opacity: .6;
         margin-bottom: 30px;
@@ -176,7 +176,21 @@
                 opacity: 0.8;
             }
 
-
+            @keyframes fadeInScaleContact {
+                from {
+                    opacity: 0;
+                    transform: scale(0.8);
+                }
+                to {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+            
+            .contact-appear {
+                animation: fadeInScaleContact 0.5s ease forwards;
+            }
+            
 
     
 
