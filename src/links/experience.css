@@ -2,10 +2,10 @@
     
                     
     margin: auto;
-    margin-top: 20px;
+    margin-top: 40px;
     border-radius: 2%;
-    width: 900px;
-    height: 1150px;/* Altura fija para mostrar el contenido sin salirse del fondo */
+    width: 850px;
+    height: 1100px;/* Altura fija para mostrar el contenido sin salirse del fondo */
     position: relative;
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.7);
