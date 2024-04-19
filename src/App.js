@@ -3,6 +3,7 @@ import './App.css';
 import '../src/links/about.css'
 import '../src/links/skills.css'
 import '../src/links/experience.css'
+import 'normalize.css';
 
 import Wrapper from './wrapper';
 import About from './links/about'
