@@ -1,13 +1,13 @@
 
 
 .displayContact{
+    scale: 0.8;
     
-   
     margin: auto;
-    margin-top: 80px;
+    margin-top: -30px;
     border-radius: 2%;
     width: 700px;
-    height: 1050px;
+    height: 900px;
     position: relative;
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
@@ -24,7 +24,7 @@
 
 
     .displayContact h1{
-        margin-top: 30px;
+        margin-top: 40px;
         text-align:CENTER;
         font-weight: bold;
         font-size: 50px;
@@ -55,7 +55,7 @@
       .close-buttonContact {
         position: absolute;
         top: 010px; /* Ajusta la posición según sea necesario */
-        right: 10px; /* Ajusta la posición según sea necesario */
+        right: 15px; /* Ajusta la posición según sea necesario */
         width: 40px; /* Ajusta el ancho según sea necesario */
         height: 40px; /* Ajusta la altura según sea necesario */
         background: none;

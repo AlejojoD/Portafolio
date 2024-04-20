@@ -3,9 +3,55 @@
 
 
 
-.header{
- 
+
+.video-background {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
+.video-background::-webkit-media-controls {
+  display: none !important;
+}
+
+.video-background::-webkit-media-controls-enclosure {
+  display: none !important;
+}
+
+.video-background::-webkit-media-controls-panel {
+  display: none !important;
+}
+
+.video-background::-webkit-media-controls-play-button {
+  display: none !important;
+}
+/* Ocultar el botón de reproducción en el centro */
+.video-background::-webkit-media-controls-start-playback-button {
+  display: none !important;
+}
+
+
+
+/* Ocultar los controles en dispositivos móviles */
+@media (max-width: 768px) {
+  .video-background::-webkit-media-controls {
+      display: none !important;
+  }
+  .video-background::-webkit-media-controls-enclosure {
+      display: none !important;
+  }
+  .video-background::-webkit-media-controls-panel {
+      display: none !important;
+  }
+  .video-background::-webkit-media-controls-play-button {
+      display: none !important;
+  }
+}
+
 
 .fondo {
   position: absolute;
@@ -30,11 +76,12 @@
 
 
 .header {
+  scale: 0.7;
   margin: auto;
-  margin-top: 120px;
+  margin-top: 0px;
   border-radius: 5%;
   width: 1300px;
-  height: 1000px;
+  height: 700px;
   position: relative;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0); /* Fondo semitransparente */
@@ -191,16 +238,46 @@ opacity: 0.8;
 
 /*aqui inician los mediaquery para el responsive*/
 /*pantallas pequenas */
+.imagen-fondo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: none; /* Ocultar la imagen por defecto */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  filter: brightness(0.7) contrast(1.1) saturate(1.3);
+  
+
+}
+
+@media only screen and (max-width: 600px) {
+  .imagen-fondo {
+      display: block; /* Mostrar la imagen en pantallas pequeñas */
+  }
+
+  .video-background {
+      display: none; /* Ocultar el video en pantallas pequeñas */
+  }
+}
+
+
+
 
 @media only screen and (max-width: 600px) {
   .header {
-    margin-top: 80px; /* Reducir el margen superior */
+    margin-top: -90px; /* Reducir el margen superior */
     width: 90%; /* Ajustar el ancho al 90% del contenedor */
     height: auto; /* Altura automática para adaptarse al contenido */
   }
 
   .iconos {
-    margin-right: 20px; /* Reducir el margen derecho */
+    margin-right: 40px; /* Reducir el margen derecho */
+    
   }
 
   .icons li {
@@ -230,7 +307,7 @@ opacity: 0.8;
     content: '';
     display: block;
     width: 3px;
-    height: 80%;
+    height: 90%;
     background-color:whitesmoke;
     margin-left: 130px; /* Ajusta según necesites */
     margin-top: -25px;

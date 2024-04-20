@@ -1,10 +1,10 @@
 .display{
-   
+    scale: 0.7;
     margin: auto;
-    margin-top: 20px;
+    margin-top: -100px;
     border-radius: 1%;
-    width: 850px;
-    height: 1140px;
+    width: 750px;
+    height: 1100px;
     position: relative;
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
@@ -43,8 +43,8 @@
     font-size: 27px;
     text-align: justify;
     padding: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 60px;
+    margin-right: 60px;
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
@@ -55,8 +55,8 @@
   }
   .close-buttonAbout {
     position: absolute;
-    top: 10px; /* Ajusta la posición según sea necesario */
-    right: 20px; /* Ajusta la posición según sea necesario */
+    top: -20px; /* Ajusta la posición según sea necesario */
+    right: 0px; /* Ajusta la posición según sea necesario */
     background: none;
     border: none;
     font-size: 90px;
@@ -83,6 +83,45 @@
 .about-appear {
   animation: fadeInScale 0.6s ease forwards;
 }
+@media only screen and (max-width: 600px) {
+  .close-buttonAbout {
+    color: rgb(163, 159, 159); /* Cambia el color del botón a blanco */
+    top: -10px; /* Ajusta la posición hacia arriba */
+    right: -50px; /* Ajusta la posición hacia la derecha */
+    font-size: 60px;
+  }
+}
 
 
 
+@media only screen and (max-width: 600px) {
+  .display {
+    
+    scale: 0.7;
+    margin: auto; /* Centra el elemento horizontalmente */
+    width: 100%; /* Ajusta el ancho al 90% del contenedor */
+    max-height: 1150px; /* Establece un ancho máximo */
+    height: auto; /* Altura automática para adaptarse al contenido */
+    position: relative; /* Añade posición relativa */
+    left: 0; /* Reinicia la posición left */
+    
+  }
+
+  .imagen {
+    width: 100%; /* Ajusta el ancho al 90% del contenedor */
+    max-width: 500px; /* Establece un ancho máximo */
+    min-width: none;
+    height: auto; /* Altura automática para adaptarse al contenido */
+    margin: auto; /* Centra el elemento horizontalmente */
+    display: block; /* Asegura que la imagen sea un elemento de bloque */
+  }
+  .display h1{
+    font-size: 30px;
+    padding-left: 0;
+  }
+  .display p{
+    font-size: 18px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+}

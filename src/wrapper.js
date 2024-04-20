@@ -5,6 +5,7 @@ import About from './links/about';
 import Skills from './links/skills';
 import Experience from './links/experience';
 import Contact from './links/contact';
+import fondoimg from './fondo2.jpg';
 
 function Wrapper() {
     const [activeComponent, setActiveComponent] = useState(null);
@@ -17,12 +18,17 @@ function Wrapper() {
 
     return (
         <div className="wrapper">
-            <div className="fondo">
-                <video autoPlay loop muted>
-                    <source src={video} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+       <div className="fondo">
+    <video autoPlay loop muted className="video-background" controlsList="nodownload">
+        <source src={video} type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+    <img src={fondoimg} alt="Imagen de fondo" className="imagen-fondo" />
+</div>
+
+
+
+
             {showHeader && (
                 <div className="header">
                     <div className="iconos">
