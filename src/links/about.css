@@ -96,15 +96,18 @@
 
 @media only screen and (max-width: 600px) {
   .display {
-    
-    scale: 0.7;
-    margin: auto; /* Centra el elemento horizontalmente */
-    width: 100%; /* Ajusta el ancho al 90% del contenedor */
-    max-height: 1150px; /* Establece un ancho máximo */
-    height: auto; /* Altura automática para adaptarse al contenido */
-    position: relative; /* Añade posición relativa */
-    left: 0; /* Reinicia la posición left */
-    
+    border-radius: 2%;
+    scale: 0.8;
+    right: 5px;
+    margin: auto;
+    margin-top: -30px;
+    border-radius: 1%;
+    width: 45vh;
+    height: 750px;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
+    padding: 20px;
   }
 
   .imagen {

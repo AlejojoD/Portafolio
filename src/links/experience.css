@@ -143,7 +143,53 @@ opacity: 1;
 }
 
   
+@media only screen and (max-width: 600px) {
+    .displayExp {
+      border-radius: 2%;
+      scale: 0.8;
+      right: 5px;
+      margin: auto;
+      margin-top: -30px;
+      
+      width: 45vh;
+      height: 750px;
+      position: relative;
+      z-index: 1;
+      background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
+      padding: 20px;  
+      
+    }
 
+    .displayExp h1{
+        font-size: 30px;
+        padding-left: 0;
+    }
+    .displayExp h2{
+        font-size: 18px;
+        padding-left: 0;
+
+    }
+    .displayExp h3{
+        font-size: 15px;
+        padding-left: 0;
+
+    }
+    .displayExp h4{
+        font-size: 20px;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .close-buttonExp {
+      color: rgb(163, 159, 159); /* Cambia el color del botón a blanco */
+      top: 10px; /* Ajusta la posición hacia arriba */
+      right: -50px; /* Ajusta la posición hacia la derecha */
+      font-size: 60px;
+    }
+  }
 
 
 

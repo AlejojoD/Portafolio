@@ -191,7 +191,46 @@
                 animation: fadeInScaleContact 0.5s ease forwards;
             }
             
+            @media only screen and (max-width: 600px) {
+                .displayContact {
+                  border-radius: 2%;
+                  scale: 0.8;
+                  right: 5px;
+                  margin: auto;
+                  margin-top: -30px;
+                  border-radius: 1%;
+                  width: 45vh;
+                  height: 650px;
+                  position: relative;
+                  z-index: 1;
+                  background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
+                  padding: 20px;
+          
+                } 
 
+
+                .displayContact h1{
+                    font-size: 30px;
+                }
+              
+                .formContact{
+                    scale: 0.7;
+                    margin-top: -130px;
+                    margin-left: -50px;
+
+
+                }
+
+                }
+
+                @media only screen and (max-width: 600px) {
+                    .close-buttonContact {
+                      color: rgb(163, 159, 159); /* Cambia el color del botón a blanco */
+                      top: 0px; /* Ajusta la posición hacia arriba */
+                      right: -30px; /* Ajusta la posición hacia la derecha */
+                      font-size: 60px;
+                    }
+                  }
     
 
       

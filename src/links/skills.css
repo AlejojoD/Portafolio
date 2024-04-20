@@ -97,15 +97,20 @@
    
 @media only screen and (max-width: 600px) {
   .displaySkills {
+    border-radius: 2%;
+    scale: 0.8;
+    right: 5px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: -30px;
     border-radius: 1%;
-    width: 400px;
-    height: 600px;
+    width: 45vh;
+    height: 650px;
     position: relative;
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
     padding: 20px;
+
+
     
 
     
@@ -136,13 +141,20 @@
 
   .displaySkills p {
     font-size: 20px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: -10px;
+    margin-right: -10px;
     margin-top: 0;
     
     word-spacing: 15px;
   }
 }
 
-
+@media only screen and (max-width: 600px) {
+    .close-buttonSkills {
+      color: rgb(163, 159, 159); /* Cambia el color del botón a blanco */
+      top: -10px; /* Ajusta la posición hacia arriba */
+      right: -50px; /* Ajusta la posición hacia la derecha */
+      font-size: 60px;
+    }
+  }
 
